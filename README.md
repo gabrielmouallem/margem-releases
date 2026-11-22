@@ -11,6 +11,8 @@
   <br><sub>A drawing of the app, from Margem's page. The answer was written for it.</sub>
 </p>
 
+[Margem for Mac](https://getmargem.com/) · [Watch the 20-second demo](https://getmargem.com/guides/ask-claude-about-selected-text-on-mac/#demo)
+
 ## Install
 
 In Terminal:
