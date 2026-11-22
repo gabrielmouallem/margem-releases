@@ -9,9 +9,9 @@
 # Options (environment):  MARGEM_ZIP=<url or path>  MARGEM_DEST=<folder>  MARGEM_NO_OPEN=1 (the tests)
 set -eu
 
-ZIP_URL="${MARGEM_ZIP:-https://github.com/gabrielmouallem/margem-releases/releases/download/v0.33/Margem.zip}"
-SHA256="b92e9b986be0467d254e1db5cf39c94f5026da243e8e1b91621cd5cf62ab9106"
-VERSION="0.33"
+ZIP_URL="${MARGEM_ZIP:-https://github.com/gabrielmouallem/margem-releases/releases/download/v0.34/Margem.zip}"
+SHA256="8af54ebd67d6a549ef0feb683256d8bf27412cec912017de5223da95a684d331"
+VERSION="0.34"
 
 say() { printf '%s\n' "$*"; }
 fail() { printf 'Margem: %s\n' "$*" >&2; exit 1; }
