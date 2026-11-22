@@ -9,9 +9,9 @@
 # Options (environment):  MARGEM_ZIP=<url or path>  MARGEM_DEST=<folder>  MARGEM_NO_OPEN=1 (the tests)
 set -eu
 
-ZIP_URL="${MARGEM_ZIP:-https://github.com/gabrielmouallem/margem-releases/releases/latest/download/Margem.zip}"
-SHA256="1c4e39aefd290ee55bd32d96f3fd4d0f52fe47ad012bf746a61bfce2885a73cd"
-VERSION="0.27"
+ZIP_URL="${MARGEM_ZIP:-https://github.com/gabrielmouallem/margem-releases/releases/download/v0.28/Margem.zip}"
+SHA256="5009d89fc9d0dda94ef96cda09a3abf7d671d549eb9ead5e091eb0446814ab2e"
+VERSION="0.28"
 
 say() { printf '%s\n' "$*"; }
 fail() { printf 'Margem: %s\n' "$*" >&2; exit 1; }
@@ -30,7 +30,7 @@ fi
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 
-say "Downloading Margem $VERSION…"
+say "Downloading Margem ${VERSION}..."
 case "$ZIP_URL" in
   http*) curl -fL --progress-bar "$ZIP_URL" -o "$tmp/Margem.zip" || fail "the download failed. Try again, or get the app from the page." ;;
   *) cp "$ZIP_URL" "$tmp/Margem.zip" ;;
